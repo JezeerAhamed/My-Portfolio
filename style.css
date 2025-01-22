@@ -1,0 +1,466 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+/* Smooth Transition */
+section {
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    background-color: #f1f1f1;
+}
+#hero {
+    height: 100vh;
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+#blog {
+    padding: 40px;
+}
+
+.article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 1rem;
+}
+
+.article a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+#contact {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Hover effect for buttons */
+.cta-button, button {
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover, button:hover {
+    background-color: #3498DB; /* Light Blue */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #E74C3C; /* Red */
+    text-decoration: underline;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Add padding to each section for better spacing */
+section {
+    padding: 60px 20px;
+}
+
+/* Increase space between headings and paragraphs */
+h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+<nav class="navbar">
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2C3E50;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #3498DB; /* Light Blue */
+}
+footer {
+    background-color: #34495E;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+footer a:hover {
+    color: #E74C3C; /* Red */
+    text-decoration: underline;
+}
+.loader {
+    border: 8px solid #f3f3f3; /* Light Gray */
+    border-top: 8px solid #3498DB; /* Light Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('path-to-your-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #3498DB; /* Change this color to any you prefer */
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e74c3c; /* Change this color to any you prefer */
+}
+
+.cta-button {
+    background-color: #3498DB;
+    padding: 10px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #2980B9;
+}
+
+/* Parallax Background Effect */
+.parallax {
+    background-image: url('path-to-your-image.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Styling the contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #3498DB;
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #2980B9;
+}
+/* Styling Testimonials */
+.testimonial-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('path-to-your-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #3498DB; /* Change this color to any you prefer */
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e74c3c; /* Change this color to any you prefer */
+}
+
+.cta-button {
+    background-color: #3498DB;
+    padding: 10px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #2980B9;
+}
+

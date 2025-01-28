@@ -3,182 +3,385 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jezeer Ahamed's Portfolio - Data Analytics, AI, and Freelancing">
     <title>Jezeer Ahamed - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div class="loader"></div>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="spinner"></div>
+        <div class="loader-text">JR</div>
+    </div>
+    
 
-    <header>
-        <h1>Jezeer Ahamed</h1>
-        <p>Welcome to my portfolio website</p>
+    <!-- Header -->
+    <header id="home">
+        <div class="container">
+            <div class="logo-title">
+                <img src="images/logo.png" alt="JR Logo" class="logo">
+                <h1>Jezeer Ahamed</h1>
+                <h2 class="tagline">Data Analyst | AI Enthusiast | Educator</h2>
+
+            </div>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i> <!-- FontAwesome hamburger icon -->
+                </div>
+                <ul id="nav-links">
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-details">Contact</a></li>
-        </ul>
-    </nav>
+    
+    
 
+    <!-- Hero Section -->
     <section id="hero" class="hero-section">
+        <div id="particles-js"></div>
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore my work, projects, and expertise in data analytics, AI, and more.</p>
-            <a href="#contact-details" class="cta-button" aria-label="Navigate to contact section">Get in Touch</a>
+            <h1 data-aos="zoom-in" data-aos-duration="1000">Welcome to My Portfolio</h1>
+            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
+                Explore my work, projects, and expertise in data analytics, AI, and more.
+            </p>
+            <a href="#about" class="cta-button" data-aos="zoom-in" data-aos-delay="600">Learn More</a>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-container">
+                <!-- Profile Image -->
+                <div class="about-image" data-aos="fade-right">
+                    <img src="images/profile.jpg" alt="Jezeer Ahamed">
+                </div>
     
-    
-    <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <img src="images\Myphoto.jpg" alt="A photo of Jezeer Ahamed" class="profile-pic">
-        <p>Hi, I’m Jezeer Ahamed, a passionate data analyst and A-level Physics teacher with over 7 years of experience. I specialize in data-driven insights, sports data analytics, and leveraging my technical skills to solve complex problems. I’m always looking for opportunities to grow, collaborate, and help others understand the power of data.</p>
-        <p>With a strong background in physics, chemistry, and mathematics, I have a solid foundation in analytical thinking, which allows me to approach data from multiple perspectives. I’m currently focused on expanding my knowledge of AI and pursuing freelance opportunities in the tech industry.</p>
-        <p>In my free time, I enjoy sports, particularly badminton, and I’m excited to merge my passion for data analytics with my love of sports.</p>
+                <!-- About Content -->
+                <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+                    <h3>Hi, I'm Jezeer Ahamed!</h3>
+                    <p>
+                        A passionate <strong>Data Analyst</strong> and <strong>A-Level Physics Teacher</strong> with over 
+                        7 years of teaching experience. I combine my technical expertise and love for problem-solving to 
+                        deliver impactful solutions.
+                    </p>
+                    <p>
+                        I specialize in <strong>data-driven insights, sports analytics, and AI</strong>. With a background 
+                        in Physics, Chemistry, and Mathematics, I bring a multi-dimensional approach to problem-solving.
+                    </p>
+                    <p>
+                        Currently, I'm diving into the world of AI and exploring freelancing opportunities. My goal is to 
+                        make data accessible, meaningful, and actionable.
+                    </p>
+                    <a href="#contact" class="cta-button">Get in Touch</a>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
+    <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <i class="fas fa-chart-line"></i>
-                <h4>Data Analysis</h4>
-                <p>Excel, MySQL, Python</p>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+    
+            <!-- Technical Skills -->
+            <div class="skills-category">
+                <div class="category-header" data-aos="fade-up">
+                    <i class="fas fa-laptop-code category-icon"></i>
+                    <h3>Technical Skills</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up">
+                        <i class="fas fa-atom skill-icon"></i>
+                        <h4>Physics Expertise</h4>
+                        <p>A-level Physics teaching experience (6+ years)</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <h4>Data Analysis</h4>
+                        <p>Intermediate knowledge, pursuing advanced training</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h4>SQL</h4>
+                        <p>Beginner with growing interest in database querying</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h4>HTML</h4>
+                        <p>Proficient enough to build responsive websites</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-tools skill-icon"></i>
+                        <h4>Programming Tools</h4>
+                        <p>Experienced with MySQL, Visual Studio Code</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fas fa-briefcase skill-icon"></i>
+                        <h4>Freelancing</h4>
+                        <p>Active in data analytics freelancing</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                        <i class="fas fa-robot skill-icon"></i>
+                        <h4>AI Basics</h4>
+                        <p>Studying a beginner course in AI</p>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <h4>SQL</h4>
-                <p>Advanced Querying & Database Management</p>
+    
+            <!-- Soft Skills -->
+            <div class="skills-category">
+                <div class="category-header" data-aos="fade-up">
+                    <i class="fas fa-user-friends category-icon"></i>
+                    <h3>Soft Skills</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up">
+                        <i class="fas fa-user skill-icon"></i>
+                        <h4>Independent Worker</h4>
+                        <p>Strong preference for independent tasks</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-lightbulb skill-icon"></i>
+                        <h4>Ambitious Learner</h4>
+                        <p>Always learning and developing new skills</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-mountain skill-icon"></i>
+                        <h4>Resilient & Goal-Oriented</h4>
+                        <p>Focused and able to overcome challenges</p>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-                <i class="fas fa-palette"></i>
-                <h4>Data Visualization</h4>
-                <p>Power BI, Tableau</p>
+    
+            <!-- Sports & Hobbies -->
+            <div class="skills-category">
+                <div class="category-header" data-aos="fade-up">
+                    <i class="fas fa-basketball-ball category-icon"></i>
+                    <h3>Sports & Hobbies</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up">
+                        <i class="fas fa-basketball-ball skill-icon"></i>
+                        <h4>Badminton</h4>
+                        <p>Intermediate player, passionate about sports</p>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-chart-pie skill-icon"></i>
+                        <h4>Sports Data Analytics</h4>
+                        <p>Combining passion for sports with data</p>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-                <i class="fas fa-robot"></i>
-                <h4>Machine Learning</h4>
-                <p>Beginner in AI</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-flask"></i>
-                <h4>Physics & Mathematics</h4>
-                <p>Expertise in Theoretical & Applied Concepts</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-tasks"></i>
-                <h4>Project Management</h4>
-                <p>Independent Task Execution</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-language"></i>
-                <h4>Languages</h4>
-                <p>Fluent in Tamil and English</p>
+    
+            <!-- Agriculture -->
+            <div class="skills-category">
+                <div class="category-header" data-aos="fade-up">
+                    <i class="fas fa-seedling category-icon"></i>
+                    <h3>Agriculture</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up">
+                        <i class="fas fa-seedling skill-icon"></i>
+                        <h4>Vertical Farming</h4>
+                        <p>Researching and planning aerophonic farming</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
+    </section>
     
 
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="images\project1.png" alt="Project 1" class="project-image" />
-                <div class="project-content">
-                    <h3>Daily Mood Tracker</h3>
-                    <p>A web app to track your daily mood and provide insights for a balanced life.</p>
-                    <a href="#" target="_blank">View Project</a>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+    
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <img src="images/project1.png" alt="Daily Mood Tracker" class="project-image">
+                    <div class="project-content">
+                        <h3>Daily Mood Tracker</h3>
+                        <p>A web app to track your daily mood and provide insights for a balanced life.</p>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="images\project2.png" alt="Project 2" class="project-image" />
-                <div class="project-content">
-                    <h3>Personal Assistant App</h3>
-                    <p>An AI-powered app to help schedule your work and manage daily routines efficiently.</p>
-                    <a href="#" target="_blank">View Project</a>
+    
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/project2.png" alt="Personal Assistant App" class="project-image">
+                    <div class="project-content">
+                        <h3>Personal Assistant App</h3>
+                        <p>An AI-powered app to help schedule your work and manage daily routines efficiently.</p>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="images\project3.png" alt="Project 3" class="project-image" />
-                <div class="project-content">
-                    <h3>Portfolio Website</h3>
-                    <p>A stylish personal portfolio website to showcase projects and attract clients.</p>
-                    <a href="#" target="_blank">View Project</a>
+    
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/project3.png" alt="Portfolio Website" class="project-image">
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A stylish personal portfolio website to showcase projects and attract clients.</p>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
 
-    <section id="testimonials">
-        <h2>What People Say</h2>
-        <div class="testimonial-card">
-            <p>
-                This portfolio is absolutely stunning! The design is intuitive, and the content highlights every important skill effectively.
-            </p>
-            <h4 class="author">- Jane Doe, Client</h4>
-        </div>
-        <div class="testimonial-card">
-            <p>
-                Excellent work! Your attention to detail and the seamless flow of information truly impressed me.
-            </p>
-            <h4 class="author">- John Smith, Collaborator</h4>
-        </div>
-    </section>
-    
-
-    <section id="blog">
-        <h2>Latest Articles</h2>
-        <div class="article">
-            <h3>Understanding Data Analytics for Beginners</h3>
-            <p>A beginner’s guide to data analysis, including common tools and techniques. <a href="#">Read More</a></p>
-        </div>
-        <div class="article">
-            <h3>AI in Sports: The Future of Performance Analysis</h3>
-            <p>How AI is revolutionizing sports analytics and helping teams improve performance. <a href="#">Read More</a></p>
-        </div>
-    </section>
-
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form class="contact-form" action="mailto:jezeerahamed254@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div class="contact-info">
-            <p>Or reach out directly via email: <a href="mailto:jezeerahamed254@gmail.com">jezeerahamed254@gmail.com</a></p>
-            <p>Connect with me on <a href="https://linkedin.com/in/jezeer-ahamed-0a19041a5" target="_blank">LinkedIn</a> or <a href="https://github.com/JezeerAhamed" target="_blank">GitHub</a>.</p>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <p class="contact-description" data-aos="fade-up" data-aos-delay="100">
+                I'd love to hear from you! Whether you have a question, want to discuss a project, or just say hello, feel free to reach out.
+            </p>
+    
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" data-aos="fade-right">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+    
+                <!-- Contact Details -->
+                <div class="contact-details" data-aos="fade-left" data-aos-delay="100">
+                    <h3>Reach Out Directly</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:jezeerahamed254@gmail.com">jezeerahamed254@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> +94771041815</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/jezeer-ahamed-0a19041a5" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/JezeerAhamed" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/JezeerAhamed" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Jezeer Ahamed. All rights reserved.</p>
-        <p>Connect with me:
-            <a href="https://www.linkedin.com/in/jezeer-ahamed-0a19041a5"><i class="fab fa-linkedin"></i> LinkedIn</a> |
-            <a href="https://github.com/JezeerAhamed"><i class="fab fa-github"></i> GitHub</a> |
-            <a href="mailto:jezeerahamed254@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-        </p>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo and Intro -->
+                <div class="footer-about" data-aos="fade-up">
+                    <img src="images/logo.png" alt="Logo" class="footer-logo">
+                    <p>
+                        Thank you for visiting! Feel free to reach out via email or connect with me on social media.
+                    </p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="footer-social" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/jezeer-ahamed-0a19041a5" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/JezeerAhamed" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:jezeerahamed254@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-bottom" data-aos="fade-up" data-aos-delay="300">
+                <p>&copy; 2025 Jezeer Ahamed. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+    
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
-        window.onload = function() {
-            const loader = document.querySelector('.loader');
-            loader.style.transition = "opacity 0.5s";
-            loader.style.opacity = 0;
-            setTimeout(() => loader.style.display = 'none', 500);
-        }
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('Particles.js loaded');
+        });
     </script>
+    <script>
+        window.addEventListener("load", () => {
+            // Wait for the page to load, then hide the loader
+            const loader = document.querySelector(".loader");
+            if (loader) {
+                loader.style.opacity = "0"; // Fade out
+                setTimeout(() => {
+                    loader.style.display = "none"; // Remove after fading
+                }, 500); // Wait for fade-out animation (500ms)
+            }
+        });
+    </script>
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("#nav-links a");
+    
+        window.addEventListener("scroll", () => {
+            let current = "";
+    
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - 60; // Adjust based on header height
+                const sectionHeight = section.clientHeight;
+    
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute("id");
+                }
+            });
+    
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+    
+    
+    
+    
 </body>
 </html>

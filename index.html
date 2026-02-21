@@ -1,387 +1,470 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jezeer Ahamed's Portfolio - Data Analytics, AI, and Freelancing">
-    <title>Jezeer Ahamed - Portfolio</title>
+    <meta name="description" content="Jezeer Ahamed portfolio: AI engineering journey, data science projects, and A/L Physics education impact.">
+    <title>Jezeer Ahamed | Iconic AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Loader -->
-    <div class="loader">
-        <div class="spinner"></div>
-        <div class="loader-text">JR</div>
-    </div>
-    
+    <div class="background-glow" aria-hidden="true"></div>
 
-    <!-- Header -->
-    <header id="home">
-        <div class="container">
-            <div class="logo-title">
-                <img src="images/logo.png" alt="JR Logo" class="logo">
-                <h1>Jezeer Ahamed</h1>
-                <h2 class="tagline">Data Analyst | AI Enthusiast | Educator</h2>
+    <header class="site-header" id="home">
+        <div class="container nav-wrap">
+            <a class="brand" href="#home">
+                <img src="images/logo.png" alt="Jezeer Ahamed logo" class="brand-logo">
+                <span class="brand-text">
+                    <strong>Jezeer Ahamed</strong>
+                    <small>Iconic AI</small>
+                </span>
+            </a>
 
-            </div>
-            <nav>
-                <div class="menu-toggle" id="menu-toggle">
-                    <i class="fas fa-bars"></i> <!-- FontAwesome hamburger icon -->
-                </div>
-                <ul id="nav-links">
-                    <li><a href="#about" class="active">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="site-nav" id="site-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#learning">Learning</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
-    
-    
-    
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div id="particles-js"></div>
-        <div class="hero-content">
-            <h1 data-aos="zoom-in" data-aos-duration="1000">Welcome to My Portfolio</h1>
-            <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
-                Explore my work, projects, and expertise in data analytics, AI, and more.
-            </p>
-            <a href="#about" class="cta-button" data-aos="zoom-in" data-aos-delay="600">Learn More</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">About Me</h2>
-            <div class="about-container">
-                <!-- Profile Image -->
-                <div class="about-image" data-aos="fade-right">
-                    <img src="images/profile.jpg" alt="Jezeer Ahamed">
-                </div>
-    
-                <!-- About Content -->
-                <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-                    <h3>Hi, I'm Jezeer Ahamed!</h3>
-                    <p>
-                        A passionate <strong>Data Analyst</strong> and <strong>A-Level Physics Teacher</strong> with over 
-                        7 years of teaching experience. I combine my technical expertise and love for problem-solving to 
-                        deliver impactful solutions.
+    <main>
+        <section class="hero section-pad">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">AI Engineer in Progress | Data Science Practitioner | A/L Physics Educator</p>
+                    <h1>Building AI Systems. Teaching Physics. Engineering Smarter Education.</h1>
+                    <p class="hero-summary">
+                        I build practical AI-powered education workflows while mentoring students with exam-focused precision.
+                        My path combines engineering, data, and teaching to solve real academic performance problems.
                     </p>
-                    <p>
-                        I specialize in <strong>data-driven insights, sports analytics, and AI</strong>. With a background 
-                        in Physics, Chemistry, and Mathematics, I bring a multi-dimensional approach to problem-solving.
-                    </p>
-                    <p>
-                        Currently, I'm diving into the world of AI and exploring freelancing opportunities. My goal is to 
-                        make data accessible, meaningful, and actionable.
-                    </p>
-                    <a href="#contact" class="cta-button">Get in Touch</a>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">View Projects</a>
+                        <a class="btn btn-ghost" href="#contact">Let&apos;s Collaborate</a>
+                    </div>
+                    <div class="hero-metrics">
+                        <article>
+                            <strong>200+</strong>
+                            <span>Students Mentored</span>
+                        </article>
+                        <article>
+                            <strong>2018</strong>
+                            <span>Teaching Since</span>
+                        </article>
+                        <article>
+                            <strong>4</strong>
+                            <span>Core AI/EdTech Projects</span>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
-    
-            <!-- Technical Skills -->
-            <div class="skills-category">
-                <div class="category-header" data-aos="fade-up">
-                    <i class="fas fa-laptop-code category-icon"></i>
-                    <h3>Technical Skills</h3>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="fade-up">
-                        <i class="fas fa-atom skill-icon"></i>
-                        <h4>Physics Expertise</h4>
-                        <p>A-level Physics teaching experience (6+ years)</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                        <i class="fas fa-chart-line skill-icon"></i>
-                        <h4>Data Analysis</h4>
-                        <p>Intermediate knowledge, pursuing advanced training</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                        <i class="fas fa-database skill-icon"></i>
-                        <h4>SQL</h4>
-                        <p>Beginner with growing interest in database querying</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-                        <i class="fab fa-html5 skill-icon"></i>
-                        <h4>HTML</h4>
-                        <p>Proficient enough to build responsive websites</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
-                        <i class="fas fa-tools skill-icon"></i>
-                        <h4>Programming Tools</h4>
-                        <p>Experienced with MySQL, Visual Studio Code</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
-                        <i class="fas fa-briefcase skill-icon"></i>
-                        <h4>Freelancing</h4>
-                        <p>Active in data analytics freelancing</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
-                        <i class="fas fa-robot skill-icon"></i>
-                        <h4>AI Basics</h4>
-                        <p>Studying a beginner course in AI</p>
+                <div class="hero-panel reveal">
+                    <img src="images/profile.jpg" alt="Jezeer Ahamed portrait" class="hero-photo">
+                    <div class="hero-panel-content">
+                        <h2>Current Focus</h2>
+                        <ul>
+                            <li>AI Engineering Professional Certificate (60%)</li>
+                            <li>LLMs, speech models, and embeddings</li>
+                            <li>Automation systems for education workflows</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-    
-            <!-- Soft Skills -->
-            <div class="skills-category">
-                <div class="category-header" data-aos="fade-up">
-                    <i class="fas fa-user-friends category-icon"></i>
-                    <h3>Soft Skills</h3>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="fade-up">
-                        <i class="fas fa-user skill-icon"></i>
-                        <h4>Independent Worker</h4>
-                        <p>Strong preference for independent tasks</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                        <i class="fas fa-lightbulb skill-icon"></i>
-                        <h4>Ambitious Learner</h4>
-                        <p>Always learning and developing new skills</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                        <i class="fas fa-mountain skill-icon"></i>
-                        <h4>Resilient & Goal-Oriented</h4>
-                        <p>Focused and able to overcome challenges</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Sports & Hobbies -->
-            <div class="skills-category">
-                <div class="category-header" data-aos="fade-up">
-                    <i class="fas fa-basketball-ball category-icon"></i>
-                    <h3>Sports & Hobbies</h3>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="fade-up">
-                        <i class="fas fa-basketball-ball skill-icon"></i>
-                        <h4>Badminton</h4>
-                        <p>Intermediate player, passionate about sports</p>
-                    </div>
-                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                        <i class="fas fa-chart-pie skill-icon"></i>
-                        <h4>Sports Data Analytics</h4>
-                        <p>Combining passion for sports with data</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Agriculture -->
-            <div class="skills-category">
-                <div class="category-header" data-aos="fade-up">
-                    <i class="fas fa-seedling category-icon"></i>
-                    <h3>Agriculture</h3>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="fade-up">
-                        <i class="fas fa-seedling skill-icon"></i>
-                        <h4>Vertical Farming</h4>
-                        <p>Researching and planning aerophonic farming</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    </section>
-    
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
-    
-            <!-- Projects Grid -->
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-aos="fade-up">
-                    <img src="images/project1.png" alt="Daily Mood Tracker" class="project-image">
-                    <div class="project-content">
-                        <h3>Daily Mood Tracker</h3>
-                        <p>A web app to track your daily mood and provide insights for a balanced life.</p>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> View Project
-                        </a>
-                    </div>
+        <section id="about" class="section-pad">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">About</p>
+                    <h2>Physics Educator Turning AI Builder</h2>
                 </div>
-    
-                <!-- Project 2 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/project2.png" alt="Personal Assistant App" class="project-image">
-                    <div class="project-content">
-                        <h3>Personal Assistant App</h3>
-                        <p>An AI-powered app to help schedule your work and manage daily routines efficiently.</p>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> View Project
-                        </a>
-                    </div>
-                </div>
-    
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/project3.png" alt="Portfolio Website" class="project-image">
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>A stylish personal portfolio website to showcase projects and attract clients.</p>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
-            <p class="contact-description" data-aos="fade-up" data-aos-delay="100">
-                I'd love to hear from you! Whether you have a question, want to discuss a project, or just say hello, feel free to reach out.
-            </p>
-    
-            <div class="contact-container">
-                <!-- Contact Form -->
-                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" data-aos="fade-right">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
-    
-                <!-- Contact Details -->
-                <div class="contact-details" data-aos="fade-left" data-aos-delay="100">
-                    <h3>Reach Out Directly</h3>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:jezeerahamed254@gmail.com">jezeerahamed254@gmail.com</a></p>
-                    <p><i class="fas fa-phone"></i> +94771041815</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/jezeer-ahamed-0a19041a5" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/JezeerAhamed" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/JezeerAhamed" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+                <div class="about-grid">
+                    <article class="glass-card reveal">
+                        <h3>Short Introduction</h3>
+                        <p>
+                            I am a Physics educator and AI-focused technologist passionate about building intelligent education systems.
+                            With a strong foundation in Engineering, Data Science, and teaching, I bridge deep theory with practical innovation.
+                            I have guided A/L students since 2018 while developing AI-powered tools and automation systems.
+                            Currently advancing in AI Engineering and applied machine learning.
+                            My mission is to merge Physics, Data, and AI to transform how students learn and perform.
+                        </p>
+                    </article>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <!-- Logo and Intro -->
-                <div class="footer-about" data-aos="fade-up">
-                    <img src="images/logo.png" alt="Logo" class="footer-logo">
-                    <p>
-                        Thank you for visiting! Feel free to reach out via email or connect with me on social media.
-                    </p>
-                </div>
-    
-                <!-- Quick Links -->
-                <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Social Media -->
-                <div class="footer-social" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Follow Me</h3>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/jezeer-ahamed-0a19041a5" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/JezeerAhamed" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:jezeerahamed254@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
+                    <article class="glass-card reveal">
+                        <h3>Story</h3>
+                        <p>
+                            My journey began with a strong academic foundation in Physics, Chemistry, and Mathematics, earning A grades at A/L.
+                            Since 2018, I have been teaching Physics, Mathematics, and Science for Technology with structured, performance-driven methods.
+                            In 2019, I started my long-term role at Iconic Academy as a Physics Tutor focused on high-impact exam preparation.
+                            Parallel to teaching, I moved into Data Science and Artificial Intelligence, completed the IBM Data Science Professional Certificate,
+                            and began building practical projects in Python, machine learning, and analytics.
+                            As an Engineering undergraduate at the University of Moratuwa, I am transitioning toward AI Engineering with a focus on
+                            LLMs, speech systems, embeddings, and automation.
+                            My long-term goal is to become a top-tier local AI builder while transforming education through technology.
+                        </p>
+                    </article>
                 </div>
             </div>
-    
-            <!-- Copyright -->
-            <div class="footer-bottom" data-aos="fade-up" data-aos-delay="300">
-                <p>&copy; 2025 Jezeer Ahamed. All rights reserved.</p>
+        </section>
+
+        <section id="skills" class="section-pad">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Technical Stack and Capabilities</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-chip reveal"><i class="fa-brands fa-python"></i><span>Python</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-brain"></i><span>Machine Learning</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-chart-line"></i><span>Data Analysis (Pandas, NumPy)</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-robot"></i><span>LLM Integration (Ollama, API models)</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-mobile-screen-button"></i><span>Flutter</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-code"></i><span>HTML, CSS, JavaScript</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-database"></i><span>SQLite</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-graduation-cap"></i><span>Educational System Design</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-gears"></i><span>Automation Systems</span></article>
+                    <article class="skill-chip reveal"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Prompt Engineering</span></article>
+                </div>
             </div>
+        </section>
+
+        <section id="projects" class="section-pad">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Projects</p>
+                    <h2>AI and EdTech Systems in Practice</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <img src="images/project1.png" alt="AI Academic Planner project preview" class="project-media">
+                        <div class="project-body">
+                            <h3>AI Academic Planner</h3>
+                            <p class="project-stack">Python | Ollama | LLMs</p>
+                            <p>Local AI-powered task planner integrated with class schedules to optimize weekly study flow.</p>
+                            <ul>
+                                <li><strong>Problem:</strong> Manual planning and timetable inefficiency.</li>
+                                <li><strong>Result:</strong> Structured weekly optimization system for academic execution.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/JezeerAhamed" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Request Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/project2.png" alt="Student Marks Analytics Dashboard preview" class="project-media">
+                        <div class="project-body">
+                            <h3>Student Marks Analytics Dashboard</h3>
+                            <p class="project-stack">HTML | JavaScript | Data Analysis</p>
+                            <p>CSV upload workflow with automated analytics, ranking logic, and report-friendly views.</p>
+                            <ul>
+                                <li><strong>Problem:</strong> Difficult tracking of performance trends.</li>
+                                <li><strong>Result:</strong> Admin-style analytics system supporting 50+ students.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/JezeerAhamed" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Request Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/project3.png" alt="Offline A/L Exam Paper Generator preview" class="project-media">
+                        <div class="project-body">
+                            <h3>Offline A/L Exam Paper Generator</h3>
+                            <p class="project-stack">Flutter | SQLite | OCR</p>
+                            <p>Offline-first paper generation app for educators who need reliable no-internet workflows.</p>
+                            <ul>
+                                <li><strong>Problem:</strong> Internet dependency for exam generation.</li>
+                                <li><strong>Result:</strong> End-to-end offline exam creation pipeline.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/JezeerAhamed" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Request Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media media-placeholder">
+                            <i class="fa-solid fa-sliders"></i>
+                            <span>Personal AI Control Panel</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Personal AI Control Panel</h3>
+                            <p class="project-stack">Python | Ollama | Workflow Automation</p>
+                            <p>Unified dashboard for orchestrating multiple local AI modules and productivity workflows.</p>
+                            <ul>
+                                <li><strong>Problem:</strong> Fragmented management across AI tools.</li>
+                                <li><strong>Result:</strong> Centralized control system for faster iteration.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/JezeerAhamed" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="#contact">Request Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-pad">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Teaching and Performance-Focused Impact</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">2019 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Physics Tutor</h3>
+                            <p class="timeline-meta">Iconic Academy | Sri Lanka</p>
+                            <ul>
+                                <li>Mentored 200+ A/L students in Physics.</li>
+                                <li>Improved pass rates through structured performance tracking methods.</li>
+                                <li>Built exam-focused modules with analytical progress systems.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">2018 - 2019</div>
+                        <div class="timeline-content">
+                            <h3>Physics, Mathematics and Science for Technology Tutor</h3>
+                            <p class="timeline-meta">Balangoda A/L Project | Balangoda, Sri Lanka</p>
+                            <ul>
+                                <li>Taught multiple science streams for advanced level students.</li>
+                                <li>Developed concept-based teaching systems for faster understanding.</li>
+                                <li>Improved conceptual clarity and exam performance consistency.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="learning" class="section-pad">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Learning Journey</p>
+                    <h2>Recent Growth and Current Focus</h2>
+                </div>
+
+                <div class="learning-grid">
+                    <article class="glass-card reveal">
+                        <h3>Recently Learned</h3>
+                        <div class="learning-item">
+                            <div>
+                                <h4>LLMs and AI System Design</h4>
+                                <p>Level: Intermediate</p>
+                            </div>
+                            <span>Applied</span>
+                        </div>
+                        <p class="learning-proof">Proof: Local Ollama-based AI tools and planner systems.</p>
+
+                        <div class="learning-item">
+                            <div>
+                                <h4>Speech Models and Embeddings</h4>
+                                <p>Level: Beginner to Intermediate</p>
+                            </div>
+                            <span>In Build</span>
+                        </div>
+                        <p class="learning-proof">Proof: AI assistant planning and integration work.</p>
+                    </article>
+
+                    <article class="glass-card reveal">
+                        <h3>Currently Learning</h3>
+                        <div class="progress-block">
+                            <div class="progress-head">
+                                <span>AI Engineering Professional Certificate</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-progress="60"></div>
+                            </div>
+                            <p>Expected completion: 2026</p>
+                        </div>
+
+                        <div class="progress-block">
+                            <div class="progress-head">
+                                <span>LLM + Speech + Embeddings Specialization Path</span>
+                                <span>Ongoing</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-progress="45"></div>
+                            </div>
+                            <p>Focused on practical system integration and deployment-ready workflows.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section-pad">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Certifications and Resume</p>
+                    <h2>Formal Credentials</h2>
+                </div>
+
+                <div class="cert-grid">
+                    <article class="glass-card reveal">
+                        <h3>IBM Data Science Professional Certificate</h3>
+                        <p>Provider: IBM</p>
+                        <p>Year: 2025</p>
+                        <a class="inline-link" href="#contact">Certificate link can be added on request.</a>
+                    </article>
+
+                    <article class="glass-card reveal">
+                        <h3>Education</h3>
+                        <p><strong>Engineering Undergraduate</strong><br>University of Moratuwa (Ongoing)</p>
+                        <p><strong>GCE Advanced Level (Physics Stream)</strong><br>A grades in Physics, Chemistry and Mathematics</p>
+                    </article>
+
+                    <article class="glass-card reveal resume-card">
+                        <h3>Resume Download</h3>
+                        <p>Download the current profile summary file. Replace this with your PDF resume later if needed.</p>
+                        <a class="btn btn-primary" href="Jezeer-Ahamed-Resume.txt" download>Download Resume</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-pad">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Work Opportunities and Collaborations</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="glass-card reveal">
+                        <h3>Reach Out Directly</h3>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:jezeerahamed254@gmail.com">jezeerahamed254@gmail.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i> +94 77 104 1815</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/jezeer-ahamed-0a19041a5" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/JezeerAhamed" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://twitter.com/JezeerAhamed" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card reveal">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+
+                            <button class="btn btn-primary" type="submit">Send via Email</button>
+                            <p class="form-note">This form opens your email app and drafts a message.</p>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>&copy; <span id="year"></span> Jezeer Ahamed. All rights reserved.</p>
+            <a href="#home">Back to top</a>
         </div>
     </footer>
-    
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init();
-        particlesJS.load('particles-js', 'particles.json', function() {
-            console.log('Particles.js loaded');
+        const menuToggle = document.getElementById("menu-toggle");
+        const siteNav = document.getElementById("site-nav");
+        const navLinks = document.querySelectorAll(".site-nav a");
+        const sections = document.querySelectorAll("main section[id]");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = siteNav.classList.toggle("open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
         });
-    </script>
-    <script>
-        window.addEventListener("load", () => {
-            // Wait for the page to load, then hide the loader
-            const loader = document.querySelector(".loader");
-            if (loader) {
-                loader.style.opacity = "0"; // Fade out
-                setTimeout(() => {
-                    loader.style.display = "none"; // Remove after fading
-                }, 500); // Wait for fade-out animation (500ms)
-            }
-        });
-    </script>
-    <script>
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll("#nav-links a");
-    
-        window.addEventListener("scroll", () => {
-            let current = "";
-    
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop - 60; // Adjust based on header height
-                const sectionHeight = section.clientHeight;
-    
-                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                    current = section.getAttribute("id");
-                }
-            });
-    
-            navLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (link.getAttribute("href").includes(current)) {
-                    link.classList.add("active");
-                }
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                siteNav.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
             });
         });
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
+                const id = entry.target.getAttribute("id");
+                navLinks.forEach((link) => {
+                    const isCurrent = link.getAttribute("href") === `#${id}`;
+                    link.classList.toggle("active", isCurrent);
+                });
+            });
+        }, { threshold: 0.45 });
+
+        sections.forEach((section) => sectionObserver.observe(section));
+
+        const revealElements = document.querySelectorAll(".reveal");
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
+                entry.target.classList.add("is-visible");
+
+                if (entry.target.classList.contains("progress-fill")) {
+                    const target = entry.target.getAttribute("data-progress") || "0";
+                    entry.target.style.width = `${target}%`;
+                }
+            });
+        }, { threshold: 0.2 });
+
+        revealElements.forEach((el) => revealObserver.observe(el));
+        document.querySelectorAll(".progress-fill").forEach((bar) => revealObserver.observe(bar));
+
+        const yearElement = document.getElementById("year");
+        yearElement.textContent = new Date().getFullYear();
+
+        const contactForm = document.getElementById("contact-form");
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+            window.location.href = `mailto:jezeerahamed254@gmail.com?subject=${subject}&body=${body}`;
+        });
     </script>
-    
-    
-    
-    
 </body>
 </html>

@@ -1,0 +1,45 @@
+﻿Jezeer Ahamed
+AI Engineer in Progress | Data Science Practitioner | A/L Physics Educator | EdTech Builder
+
+Location: Colombo, Sri Lanka
+Email: jezeerahamed254@gmail.com
+Phone: +94 77 104 1815
+LinkedIn: https://linkedin.com/in/jezeer-ahamed-0a19041a5
+GitHub: https://github.com/JezeerAhamed
+
+PROFILE
+Physics educator and AI-focused technologist building intelligent education systems.
+Strong in engineering-oriented thinking, data science application, and structured teaching.
+Focused on merging Physics, Data, and AI to improve student outcomes.
+
+EXPERIENCE
+Physics Tutor | Iconic Academy | 2019 - Present | Sri Lanka
+- Mentored 200+ A/L students in Physics.
+- Improved student pass rates with structured performance tracking.
+- Built exam-focused modules and analytical progress systems.
+
+Physics, Mathematics and Science for Technology Tutor | Balangoda A/L Project | 2018 - 2019 | Balangoda, Sri Lanka
+- Taught multiple science streams for advanced level students.
+- Developed concept-based methods to improve understanding speed.
+- Improved exam performance consistency.
+
+EDUCATION
+Engineering Undergraduate | University of Moratuwa | Ongoing
+GCE Advanced Level (Physics Stream) | A grades in Physics, Chemistry and Mathematics
+
+CERTIFICATION
+IBM Data Science Professional Certificate | IBM | 2025
+
+PROJECT HIGHLIGHTS
+- AI Academic Planner (Python, Ollama, LLMs)
+- Student Marks Analytics Dashboard (HTML, JS, Data Analysis)
+- Offline A/L Exam Paper Generator (Flutter, SQLite, OCR)
+- Personal AI Control Panel (Python, Ollama)
+
+SKILLS
+Python, Machine Learning, Data Analysis (Pandas/NumPy), LLM Integration, Flutter,
+HTML/CSS/JavaScript, SQLite, Educational System Design, Automation Systems, Prompt Engineering
+
+CURRENT LEARNING
+AI Engineering Professional Certificate (60% complete)
+LLM + Speech + Embeddings specialization path (ongoing)

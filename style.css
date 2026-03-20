@@ -103,12 +103,9 @@ img {
 }
 
 .brand-logo {
-    border: 1px solid rgba(100, 186, 255, 0.4);
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(38, 231, 255, 0.25);
-    height: 54px;
-    object-fit: cover;
-    width: 54px;
+    height: 58px;
+    object-fit: contain;
+    width: 116px;
 }
 
 .brand-text {
@@ -117,12 +114,12 @@ img {
 }
 
 .brand-text strong {
-    font-size: 0.98rem;
+    font-size: 0.96rem;
     letter-spacing: 0.3px;
 }
 
 .brand-text small {
-    color: var(--accent);
+    color: var(--text-300);
     font-size: 0.76rem;
     letter-spacing: 0.8px;
     text-transform: uppercase;
@@ -184,7 +181,7 @@ img {
     letter-spacing: -0.8px;
     line-height: 1.12;
     margin-bottom: 16px;
-    max-width: 14ch;
+    max-width: 20ch;
 }
 
 .hero-summary {
@@ -269,7 +266,9 @@ img {
 
 .hero-photo {
     aspect-ratio: 4 / 3;
+    border-bottom: 1px solid var(--line);
     object-fit: cover;
+    object-position: center top;
 }
 
 .hero-panel-content {
@@ -317,6 +316,14 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.about-grid {
+    align-items: start;
+}
+
+.about-grid .glass-card {
+    height: auto;
+}
+
 .glass-card {
     background: var(--surface);
     border: 1px solid var(--line);
@@ -334,10 +341,44 @@ img {
     color: var(--text-300);
 }
 
+.profile-strong-line {
+    color: var(--text-100) !important;
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.profile-summary {
+    line-height: 1.78;
+}
+
+.profile-list {
+    color: var(--text-300);
+    display: grid;
+    gap: 8px;
+    list-style: none;
+}
+
+.profile-list li {
+    padding-left: 16px;
+    position: relative;
+}
+
+.profile-list li::before {
+    color: var(--accent);
+    content: "+";
+    left: 0;
+    position: absolute;
+}
+
 .skills-grid {
     display: grid;
     gap: 14px;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.sports-highlight {
+    margin-top: 16px;
 }
 
 .skill-chip {
@@ -380,7 +421,39 @@ img {
 
 .project-media {
     aspect-ratio: 16 / 10;
+    filter: saturate(1.05) contrast(1.03);
     object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.project-media-wrap {
+    background: #0b1730;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-media-wrap::after {
+    background: linear-gradient(to top, rgba(5, 9, 19, 0.74), rgba(5, 9, 19, 0));
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.project-media-wrap figcaption {
+    bottom: 10px;
+    color: var(--text-100);
+    font-family: "Space Mono", monospace;
+    font-size: 0.75rem;
+    left: 12px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.project-card:hover .project-media {
+    transform: scale(1.04);
 }
 
 .media-placeholder {
@@ -611,6 +684,7 @@ img {
 
 .social-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 }
@@ -748,6 +822,23 @@ img {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .hero-copy h1 {
+        max-width: unset;
+    }
+
+    .hero-panel {
+        max-width: 100%;
+    }
+
+    .hero-actions .btn {
+        flex: 1 1 200px;
+    }
+
+    .site-nav a {
+        text-align: center;
+        width: 100%;
+    }
+
     .section-pad {
         padding: 72px 0;
     }
@@ -758,8 +849,37 @@ img {
         padding: 0 16px;
     }
 
+    .nav-wrap {
+        min-height: 74px;
+    }
+
+    .brand-logo {
+        height: 50px;
+        width: 96px;
+    }
+
+    .brand-text {
+        display: none;
+    }
+
     .hero-metrics {
         grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-summary {
+        font-size: 0.92rem;
+    }
+
+    .project-media {
+        aspect-ratio: 4 / 3;
     }
 
     .project-links {
